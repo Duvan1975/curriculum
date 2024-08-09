@@ -4,7 +4,7 @@
 }
 
 body{
-    /*height: 100vh;*/
+    height: 100vh;
     box-sizing: border-box;
     background-color: black;
     color: white;
@@ -57,7 +57,7 @@ body{
 }
 
 .imagen{
-    width: 300px;
+    width: 18.75rem;
 }
 
 .footer{
@@ -73,10 +73,48 @@ body{
 }
 
 .imagen_certificado{
-    padding: 1% 0% 2% 25%;
-    width: 700px;
+    width: 43.75rem;
 }
 
 ul{
     padding: 0% 0% 0% 5%;
+}
+
+.certificado{
+
+    display: flex;
+    justify-content: center;
+    padding: 2% 20% 3% 0%;
+
+}
+
+
+@media(max-width: 1023px){
+    .presentacion{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 4%; 
+    }
+    .presentacion_certificado{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        
+    }
+    .footer{
+        width: 110%;
+        height: auto;
+        justify-content: center;
+        
+    }
+    
+}
+@media(max-width: 1023px){
+    .presentacion__contenido{
+        width: auto;
+        gap: 10px;
+    }
+    .encabezado{
+        justify-content: center;
+    }
 }
